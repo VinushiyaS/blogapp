@@ -1,16 +1,18 @@
 import React from 'react';
+import './posts.css';  // Import the CSS file for the post component
+import image2 from './images/download (3).png';  // Use a relative path
 
 function Post2() {
   return (
     <div className="post">
-      <h2>Data Structure</h2>
-      <img src="/home/uki-jaffna/Documents/blog/src/Components/images/download (3).png" alt="Data Structure" />
-      <p>
-        Data structures are fundamental building blocks in computer science, used to organize and manage data efficiently. 
-        They play a crucial role in algorithm design, enabling efficient data storage, retrieval, and manipulation. 
-        This blog post will explore common data structures like arrays, linked lists, stacks, queues, trees, and graphs, discussing their properties and applications.
-      </p>
-      <button>Read More</button>
+      <img src={image2} alt="Data Structure" className="post-image" />
+      <div className="post-content">
+        <h2>Data Structure</h2>
+        <p>
+          Data structures are the fundamental building blocks of computer programming. They define how data is organized, stored, and manipulated within a program. Understanding data structures is very important for developing efficient and effective algorithms. In this tutorial, we will explore the most commonly used data structures, including arrays, linked lists, stacks, queues, trees, and graphs.
+        </p>
+        <button className="read-more">Read More</button>
+      </div>
     </div>
   );
 }

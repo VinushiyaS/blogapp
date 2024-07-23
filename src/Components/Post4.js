@@ -1,16 +1,18 @@
 import React from 'react';
+import './posts.css';  // Import the CSS file for the post component
+import image4 from './images/cn.jpeg';  // Use a relative path
 
 function Post4() {
   return (
     <div className="post">
-      <h2>Computer Network</h2>
-      <img src="" alt="Computer Network" />
-      <p>
-        Computer networks are interconnected systems that allow communication and resource sharing between devices. 
-        They form the backbone of modern communication and data transfer. 
-        This blog post will explore the different types of networks, network protocols, and network security.
-      </p>
-      <button>Read More</button>
+      <img src={image4} alt="Computer Networks" className="post-image" />
+      <div className="post-content">
+        <h2>Computer Networks</h2>
+        <p>
+          A computer network is a set of computers sharing resources located on or provided by network nodes. Computers use common communication protocols over digital interconnections to communicate with each other. These interconnections are made up of telecommunication network technologies based on physically wired, optical, and wireless radio-frequency methods that may be arranged in a variety of network topologies.
+        </p>
+        <button className="read-more">Read More</button>
+      </div>
     </div>
   );
 }

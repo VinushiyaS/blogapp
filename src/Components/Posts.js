@@ -1,16 +1,16 @@
 import React from 'react';
-import Post1 from './Post1';
-import Post2 from './Post2';
-import Post3 from './Post3';
-import Post4 from './Post4';
+import './posts.css';  // Import the CSS file for the Posts component
 
-function Posts()  {
+function Posts() {
   return (
-    <div className="posts-container">
-      <Post1 />
-      <Post2 />
-      <Post3 />
-      <Post4 />
+    <div className='recent-posts'>
+      <h2>Recent Posts</h2>
+      <ul>
+        <li><a href="#post1">JavaScript</a></li>
+        <li><a href="#post2">Data Structure</a></li>
+        <li><a href="#post3">Algorithm</a></li>
+        <li><a href="#post4">Computer Network</a></li>
+      </ul>
     </div>
   );
 }

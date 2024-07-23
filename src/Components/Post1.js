@@ -1,16 +1,21 @@
 import React from 'react';
+import './posts.css';  // Import the CSS file for the post component
+import image1 from './images/JavaScriptTutorial.png';  // Use a relative path
 
 function Post1() {
   return (
     <div className="post">
-      <h2>JavaScript Tutorial</h2>
-      <img src="/home/uki-jaffna/Documents/blog/src/Components/images/JavaScriptTutorial.png" alt="JavaScript Tutorial" />
-      <p>
-        JavaScript is a popular scripting language used for web development, and it is known for its versatility. 
-        It can be used for both client-side and server-side development. 
-        This blog post will discuss the fundamentals of JavaScript, including its syntax, variables, data types, and functions.
-      </p>
-      <button>Read More</button>
+      <img src={image1} alt="JavaScript Tutorial" className="post-image" />
+      <div className="post-content">
+        <h2>JavaScript</h2>
+        <p>
+          JavaScript is the world most popular lightweight, interpreted compiled programming language. It is also known
+          as scripting language for web pages. It is well-known for the development of web pages, many non-browser
+          environments also use it. JavaScript can be used for Client-side developments as well as Server-side
+          developments.
+        </p>
+        <button className="read-more">Read More</button>
+      </div>
     </div>
   );
 }
